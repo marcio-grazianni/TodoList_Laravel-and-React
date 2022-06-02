@@ -1,6 +1,5 @@
-# Digital Awesome Development Test Project
+# Digital Awesome Development Project
 
-This isn't really a test, rather a way to get an idea of how you problem solve and develop.
 
 The project should take you no more than 4 hours to complete.
 
