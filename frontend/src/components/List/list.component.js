@@ -57,40 +57,7 @@ export default function List() {
                     Create Item
                 </Link>
             </div>
-            <div className="col-12">
-                <div className="card card-body">
-                    <div className="table-responsive">
-                        <table className="table table-bordered mb-0 text-center">
-                            <thead>
-                                <tr>
-                                    <th>Description</th>
-                                    <th>Active</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {
-                                    products.length > 0 && (
-                                        products.map((row, key)=>(
-                                            <tr key={key}>
-                                                <td>{row.description}</td>
-                                                <td>{row.active}</td>
-                                                <td>
-                                                    <Link to={`/List/edit/${row.id}`} className='btn btn-success me-2'>
-                                                        Edit
-                                                    </Link>
-                                                    <Button variant="danger" onClick={()=>DeleteItem(row.id)}>
-                                                        Delete
-                                                    </Button>
-                                                </td>
-                                            </tr>
-                                        ))
-                                    )
-                                }
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
+        
           </div>
       </div>
     )
