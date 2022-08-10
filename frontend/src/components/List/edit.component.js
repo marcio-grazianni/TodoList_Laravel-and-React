@@ -91,35 +91,7 @@ export default function EditUser() {
                     </div>
                   )
                 }
-                <Form onSubmit={UpdateItem}>
-
-                  <Row className="my-3">
-                      <Col>
-                        <Form.Group controlId="Description">
-                            <Form.Label>Description</Form.Label>
-                            <Form.Control as="textarea" rows={3} value={description} onChange={(event)=>{
-                              setDescription(event.target.value)
-                            }}/>
-                        </Form.Group>
-                      </Col>
-                  </Row>
-                <Row> 
-                      <Col>
-                        <Form.Group controlId="Name">
-                            <Form.Label>Active</Form.Label>
-                            <Form.Select value={active} onChange={(event)=>{
-                              setTitle(event.target.value)
-                            }}>
-                            <option value="Completed">Completed</option>
-                            <option value="InProgress">InProgress</option>
-                            </Form.Select>
-                        </Form.Group>
-                      </Col>  
-                  </Row>
-                  <Button variant="primary" className="mt-2" size="lg" block="block" type="submit">
-                    Update
-                  </Button>
-                </Form>
+                
               </div>
             </div>
           </div>
